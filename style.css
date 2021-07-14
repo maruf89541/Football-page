@@ -116,6 +116,7 @@ footer img{
     flex-direction: column;
 }
 /* media query */
+/* for mobail  */
 @media only screen and (max-width:688px) {
     body{
         margin: 0;
@@ -157,4 +158,31 @@ footer img{
         
     }
 
+}
+/* for ipad  */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        width: 100%;
+    }
+    .banner-title{
+       width: 100%; 
+    }
+
+    .banner-img img{
+       width: 100%;
+    }
+    .banner-title h1{
+        font-size: 36px;
+    }
+    .container{
+        width: 100%;
+    }
+    .articles{
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    }
+    ;
 }
