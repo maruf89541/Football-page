@@ -121,7 +121,7 @@ footer img{
     body{
         margin: 0;
     }
-    header:hover .banner-img{
+    header:hover .banner-img img{
         display: none;
     }
     .banner{
