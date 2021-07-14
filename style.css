@@ -17,6 +17,18 @@ header:hover{
     background-position: center;
 
 }
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    position: relative;
+    top: 30px;
+}
+nav>div>a{
+    margin-left: 20px;
+}
 button{
     width: 168px;
     height: 44px;
@@ -24,6 +36,10 @@ button{
     color: white;
     border: none;
     font-size: 16px;
+}
+a{
+    text-decoration: none;
+    color: white;
 }
 main{
     display: flex;
@@ -41,6 +57,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 100px;
 }
 .banner-title{
     width: 484px;
@@ -115,15 +132,27 @@ footer img{
     align-items: center;
     flex-direction: column;
 }
+.social-icon>div>a{
+    color: rgba(0, 191, 255, 0.916);
+}
+
 /* media query */
 /* for mobail  */
 @media only screen and (max-width:688px) {
     body{
         margin: 0;
     }
+    nav{
+        position: relative;
+        top: 10px;
+    }
+    nav>div{
+        visibility: hidden;
+    }
     .banner{
         flex-direction: column;
         row-gap: 37px;
+        margin-top: 50px;
     }
     .banner-title, .banner-img{
         width: 329px;
@@ -163,6 +192,7 @@ footer img{
 @media only screen and (min-width: 689px) and (max-width: 992px) {
     body{
         overflow-x: hidden;
+        margin: 0;
     }
     header{
         width: 100%;
@@ -183,6 +213,7 @@ footer img{
     .articles{
         grid-template-columns: repeat(2, 1fr);
         place-items: center;
+        grid-gap: 0;
     }
     ;
 }
